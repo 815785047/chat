@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B6F451C22963A2B001C75FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6F451B22963A2B001C75FA /* AppDelegate.m */; };
+		9B6F451F22963A2B001C75FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6F451E22963A2B001C75FA /* ViewController.m */; };
+		9B6F452222963A2B001C75FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6F452022963A2B001C75FA /* Main.storyboard */; };
+		9B6F452422963A2C001C75FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B6F452322963A2C001C75FA /* Assets.xcassets */; };
+		9B6F452722963A2C001C75FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6F452522963A2C001C75FA /* LaunchScreen.storyboard */; };
+		9B6F452A22963A2C001C75FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6F452922963A2C001C75FA /* main.m */; };
+		9B6F4536229648F7001C75FA /* CZMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6F4535229648F7001C75FA /* CZMessage.m */; };
+		9B6F45392296806E001C75FA /* CZMessageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6F45382296806E001C75FA /* CZMessageFrame.m */; };
+		9B6F453C2296995D001C75FA /* CZMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6F453B2296995D001C75FA /* CZMessageCell.m */; };
+		9B6F453F22979442001C75FA /* NSString+CZNSStringExit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6F453E22979442001C75FA /* NSString+CZNSStringExit.m */; };
+		9B6F454122979894001C75FA /* messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B6F454022979894001C75FA /* messages.plist */; };
+		9BEBD95B2298EAF300581B95 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBD9592298EAF300581B95 /* UIImage+Extension.m */; };
+		9BEBD95D229BCAD200581B95 /* autoreply.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BEBD95C229BCAD200581B95 /* autoreply.plist */; };
+		9BEBD960229BE9DB00581B95 /* FriendTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBD95F229BE9DB00581B95 /* FriendTableViewController.m */; };
+		9BEBD963229BEB9900581B95 /* FriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBD962229BEB9900581B95 /* FriendModel.m */; };
+		9BEBD966229D0FA500581B95 /* GroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBD965229D0FA500581B95 /* GroupModel.m */; };
+		9BEBD969229D2DD300581B95 /* FriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBD968229D2DD300581B95 /* FriendCell.m */; };
+		9BEBD96C229E1CD900581B95 /* GroupHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBD96B229E1CD900581B95 /* GroupHeaderView.m */; };
+		9BF08C2222B2319300333A36 /* Documentation2.html in Resources */ = {isa = PBXBuildFile; fileRef = 9BF08C1722B2319300333A36 /* Documentation2.html */; };
+		9BF08C2322B2319300333A36 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF08C1822B2319300333A36 /* AsyncUdpSocket.m */; };
+		9BF08C2422B2319300333A36 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF08C1A22B2319300333A36 /* AsyncSocket.m */; };
+		9BF08C2522B2319300333A36 /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = 9BF08C1D22B2319300333A36 /* Documentation.html */; };
+		9BF08C2622B2319300333A36 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF08C1E22B2319300333A36 /* GCDAsyncUdpSocket.m */; };
+		9BF08C2722B2319300333A36 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF08C1F22B2319300333A36 /* GCDAsyncSocket.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9B6F451722963A2B001C75FA /* qqChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qqChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B6F451A22963A2B001C75FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9B6F451B22963A2B001C75FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9B6F451D22963A2B001C75FA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9B6F451E22963A2B001C75FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9B6F452122963A2B001C75FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B6F452322963A2C001C75FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B6F452622963A2C001C75FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B6F452822963A2C001C75FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B6F452922963A2C001C75FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B6F4534229648F7001C75FA /* CZMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZMessage.h; sourceTree = "<group>"; };
+		9B6F4535229648F7001C75FA /* CZMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZMessage.m; sourceTree = "<group>"; };
+		9B6F45372296806E001C75FA /* CZMessageFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZMessageFrame.h; sourceTree = "<group>"; };
+		9B6F45382296806E001C75FA /* CZMessageFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZMessageFrame.m; sourceTree = "<group>"; };
+		9B6F453A2296995D001C75FA /* CZMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZMessageCell.h; sourceTree = "<group>"; };
+		9B6F453B2296995D001C75FA /* CZMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZMessageCell.m; sourceTree = "<group>"; };
+		9B6F453D22979442001C75FA /* NSString+CZNSStringExit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CZNSStringExit.h"; sourceTree = "<group>"; };
+		9B6F453E22979442001C75FA /* NSString+CZNSStringExit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZNSStringExit.m"; sourceTree = "<group>"; };
+		9B6F454022979894001C75FA /* messages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = messages.plist; sourceTree = "<group>"; };
+		9BEBD9592298EAF300581B95 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		9BEBD95A2298EAF300581B95 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		9BEBD95C229BCAD200581B95 /* autoreply.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = autoreply.plist; sourceTree = "<group>"; };
+		9BEBD95E229BE9DB00581B95 /* FriendTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendTableViewController.h; sourceTree = "<group>"; };
+		9BEBD95F229BE9DB00581B95 /* FriendTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendTableViewController.m; sourceTree = "<group>"; };
+		9BEBD961229BEB9900581B95 /* FriendModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendModel.h; sourceTree = "<group>"; };
+		9BEBD962229BEB9900581B95 /* FriendModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendModel.m; sourceTree = "<group>"; };
+		9BEBD964229D0FA500581B95 /* GroupModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupModel.h; sourceTree = "<group>"; };
+		9BEBD965229D0FA500581B95 /* GroupModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupModel.m; sourceTree = "<group>"; };
+		9BEBD967229D2DD300581B95 /* FriendCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendCell.h; sourceTree = "<group>"; };
+		9BEBD968229D2DD300581B95 /* FriendCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendCell.m; sourceTree = "<group>"; };
+		9BEBD96A229E1CD900581B95 /* GroupHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupHeaderView.h; sourceTree = "<group>"; };
+		9BEBD96B229E1CD900581B95 /* GroupHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupHeaderView.m; sourceTree = "<group>"; };
+		9BF08C1722B2319300333A36 /* Documentation2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation2.html; sourceTree = "<group>"; };
+		9BF08C1822B2319300333A36 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		9BF08C1922B2319300333A36 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		9BF08C1A22B2319300333A36 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		9BF08C1B22B2319300333A36 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		9BF08C1D22B2319300333A36 /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
+		9BF08C1E22B2319300333A36 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		9BF08C1F22B2319300333A36 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		9BF08C2022B2319300333A36 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		9BF08C2122B2319300333A36 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B6F451422963A2B001C75FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B6F450E22963A2B001C75FA = {
+			isa = PBXGroup;
+			children = (
+				9B6F451922963A2B001C75FA /* qqChat */,
+				9B6F451822963A2B001C75FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B6F451822963A2B001C75FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B6F451722963A2B001C75FA /* qqChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B6F451922963A2B001C75FA /* qqChat */ = {
+			isa = PBXGroup;
+			children = (
+				9BF08C1522B2319300333A36 /* AsyncSocket */,
+				9B6F453322964711001C75FA /* Controllers */,
+				9B6F453222964709001C75FA /* Views */,
+				9B6F4531229646FC001C75FA /* Models */,
+				9B6F4530229646F1001C75FA /* Others */,
+				9B6F452022963A2B001C75FA /* Main.storyboard */,
+				9B6F452322963A2C001C75FA /* Assets.xcassets */,
+				9B6F452522963A2C001C75FA /* LaunchScreen.storyboard */,
+				9B6F452822963A2C001C75FA /* Info.plist */,
+				9B6F452922963A2C001C75FA /* main.m */,
+			);
+			path = qqChat;
+			sourceTree = "<group>";
+		};
+		9B6F4530229646F1001C75FA /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				9B6F451A22963A2B001C75FA /* AppDelegate.h */,
+				9B6F451B22963A2B001C75FA /* AppDelegate.m */,
+				9BEBD95A2298EAF300581B95 /* UIImage+Extension.h */,
+				9BEBD9592298EAF300581B95 /* UIImage+Extension.m */,
+				9B6F453D22979442001C75FA /* NSString+CZNSStringExit.h */,
+				9B6F453E22979442001C75FA /* NSString+CZNSStringExit.m */,
+				9BEBD95C229BCAD200581B95 /* autoreply.plist */,
+				9B6F454022979894001C75FA /* messages.plist */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		9B6F4531229646FC001C75FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9B6F4534229648F7001C75FA /* CZMessage.h */,
+				9B6F4535229648F7001C75FA /* CZMessage.m */,
+				9B6F45372296806E001C75FA /* CZMessageFrame.h */,
+				9B6F45382296806E001C75FA /* CZMessageFrame.m */,
+				9BEBD961229BEB9900581B95 /* FriendModel.h */,
+				9BEBD962229BEB9900581B95 /* FriendModel.m */,
+				9BEBD964229D0FA500581B95 /* GroupModel.h */,
+				9BEBD965229D0FA500581B95 /* GroupModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9B6F453222964709001C75FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9B6F453A2296995D001C75FA /* CZMessageCell.h */,
+				9B6F453B2296995D001C75FA /* CZMessageCell.m */,
+				9BEBD967229D2DD300581B95 /* FriendCell.h */,
+				9BEBD968229D2DD300581B95 /* FriendCell.m */,
+				9BEBD96A229E1CD900581B95 /* GroupHeaderView.h */,
+				9BEBD96B229E1CD900581B95 /* GroupHeaderView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9B6F453322964711001C75FA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9B6F451D22963A2B001C75FA /* ViewController.h */,
+				9B6F451E22963A2B001C75FA /* ViewController.m */,
+				9BEBD95E229BE9DB00581B95 /* FriendTableViewController.h */,
+				9BEBD95F229BE9DB00581B95 /* FriendTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9BF08C1522B2319300333A36 /* AsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				9BF08C1622B2319300333A36 /* RunLoop */,
+				9BF08C1C22B2319300333A36 /* GCD */,
+			);
+			path = AsyncSocket;
+			sourceTree = "<group>";
+		};
+		9BF08C1622B2319300333A36 /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				9BF08C1722B2319300333A36 /* Documentation2.html */,
+				9BF08C1822B2319300333A36 /* AsyncUdpSocket.m */,
+				9BF08C1922B2319300333A36 /* AsyncSocket.h */,
+				9BF08C1A22B2319300333A36 /* AsyncSocket.m */,
+				9BF08C1B22B2319300333A36 /* AsyncUdpSocket.h */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		9BF08C1C22B2319300333A36 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				9BF08C1D22B2319300333A36 /* Documentation.html */,
+				9BF08C1E22B2319300333A36 /* GCDAsyncUdpSocket.m */,
+				9BF08C1F22B2319300333A36 /* GCDAsyncSocket.m */,
+				9BF08C2022B2319300333A36 /* GCDAsyncUdpSocket.h */,
+				9BF08C2122B2319300333A36 /* GCDAsyncSocket.h */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B6F451622963A2B001C75FA /* qqChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B6F452D22963A2C001C75FA /* Build configuration list for PBXNativeTarget "qqChat" */;
+			buildPhases = (
+				9B6F451322963A2B001C75FA /* Sources */,
+				9B6F451422963A2B001C75FA /* Frameworks */,
+				9B6F451522963A2B001C75FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = qqChat;
+			productName = qqChat;
+			productReference = 9B6F451722963A2B001C75FA /* qqChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B6F450F22963A2B001C75FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = kirin.hw;
+				TargetAttributes = {
+					9B6F451622963A2B001C75FA = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 9B6F451222963A2B001C75FA /* Build configuration list for PBXProject "qqChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B6F450E22963A2B001C75FA;
+			productRefGroup = 9B6F451822963A2B001C75FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B6F451622963A2B001C75FA /* qqChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B6F451522963A2B001C75FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BEBD95D229BCAD200581B95 /* autoreply.plist in Resources */,
+				9B6F454122979894001C75FA /* messages.plist in Resources */,
+				9BF08C2222B2319300333A36 /* Documentation2.html in Resources */,
+				9B6F452722963A2C001C75FA /* LaunchScreen.storyboard in Resources */,
+				9B6F452422963A2C001C75FA /* Assets.xcassets in Resources */,
+				9BF08C2522B2319300333A36 /* Documentation.html in Resources */,
+				9B6F452222963A2B001C75FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B6F451322963A2B001C75FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B6F4536229648F7001C75FA /* CZMessage.m in Sources */,
+				9B6F45392296806E001C75FA /* CZMessageFrame.m in Sources */,
+				9BEBD960229BE9DB00581B95 /* FriendTableViewController.m in Sources */,
+				9BEBD969229D2DD300581B95 /* FriendCell.m in Sources */,
+				9B6F453C2296995D001C75FA /* CZMessageCell.m in Sources */,
+				9BF08C2722B2319300333A36 /* GCDAsyncSocket.m in Sources */,
+				9BEBD966229D0FA500581B95 /* GroupModel.m in Sources */,
+				9BF08C2422B2319300333A36 /* AsyncSocket.m in Sources */,
+				9B6F451F22963A2B001C75FA /* ViewController.m in Sources */,
+				9BEBD96C229E1CD900581B95 /* GroupHeaderView.m in Sources */,
+				9BEBD963229BEB9900581B95 /* FriendModel.m in Sources */,
+				9B6F452A22963A2C001C75FA /* main.m in Sources */,
+				9B6F453F22979442001C75FA /* NSString+CZNSStringExit.m in Sources */,
+				9BF08C2622B2319300333A36 /* GCDAsyncUdpSocket.m in Sources */,
+				9B6F451C22963A2B001C75FA /* AppDelegate.m in Sources */,
+				9BEBD95B2298EAF300581B95 /* UIImage+Extension.m in Sources */,
+				9BF08C2322B2319300333A36 /* AsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9B6F452022963A2B001C75FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B6F452122963A2B001C75FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B6F452522963A2C001C75FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B6F452622963A2C001C75FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B6F452B22963A2C001C75FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9B6F452C22963A2C001C75FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B6F452E22963A2C001C75FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = qqChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kirin.hw.qqChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B6F452F22963A2C001C75FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = qqChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kirin.hw.qqChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B6F451222963A2B001C75FA /* Build configuration list for PBXProject "qqChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B6F452B22963A2C001C75FA /* Debug */,
+				9B6F452C22963A2C001C75FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B6F452D22963A2C001C75FA /* Build configuration list for PBXNativeTarget "qqChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B6F452E22963A2C001C75FA /* Debug */,
+				9B6F452F22963A2C001C75FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B6F450F22963A2B001C75FA /* Project object */;
+}
